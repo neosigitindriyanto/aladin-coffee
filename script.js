@@ -1,0 +1,29 @@
+// Date Picker
+const getDatePickerTitle = (elem) => {
+  // From the label or the aria-label
+  const label = elem.nextElementSibling;
+  let titleText = "";
+  if (label && label.tagName === "LABEL") {
+    titleText = label.textContent;
+  } else {
+    titleText = elem.getAttribute("aria-label") || "";
+  }
+  return titleText;
+};
+
+const elems = document.querySelectorAll(".datepicker_input");
+for (const elem of elems) {
+  const datepicker = new Datepicker(elem, {
+    format: "dd/mm/yyyy", // UK format
+    title: getDatePickerTitle(elem),
+  });
+}
+
+// Phone Number
+var tele = document.querySelector("#telle");
+
+tele.addEventListener("keyup", function (e) {
+  if (event.key != "Backspace" && (tele.value.length === 4 || tele.value.length === 9)) {
+    tele.value += "-";
+  }
+});

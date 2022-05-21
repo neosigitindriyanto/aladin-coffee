@@ -1,0 +1,183 @@
+/* Font */
+@font-face {
+  font-family: Gothic Century;
+  src: url(Material/Fonts/gothic/gothic.woff);
+}
+/* ----------------------------------------------- */
+.navbar .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+body {
+  width: 100%;
+  margin: none;
+  padding: 0;
+}
+nav {
+  z-index: 2;
+}
+.nav-link {
+  font-family: "Roboto Flex";
+  font-size: 20px;
+}
+.jumbotron {
+  color: white;
+  width: 100%;
+  background-image: url(Material/Images/coffee-1652020580460-1788.jpg);
+  background-size: cover;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+.button {
+  background-color: rgb(231, 125, 38);
+  color: white;
+}
+.button:hover {
+  background-color: rgba(75, 14, 14, 0.664);
+  color: white;
+}
+.welcome {
+  margin-left: -10px;
+}
+.welcome h1 {
+  font-family: "Bad Script";
+  color: #a6631f;
+}
+.welcome h2 {
+  font-family: "Dosis";
+  font-weight: bold;
+}
+.welcome p {
+  font-family: "Dosis";
+}
+.decor1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 74% 26% 17% 83% / 57% 67% 33% 43%;
+  opacity: 0.8;
+  background-color: #a6631f;
+}
+
+.greeting {
+  margin-left: 150px;
+
+  position: absolute;
+}
+.responsive-welcome p {
+  padding-bottom: 50px;
+}
+
+.menu {
+  background-image: url(Material/Images/Coffee.png);
+  background-size: cover;
+}
+
+.list {
+  background: rgba(41, 40, 40, 0.8);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  height: 650px;
+}
+
+.list-title {
+  font-family: "Dosis";
+  border-bottom: 2px solid #a6631f;
+}
+.title {
+  font-family: "Teko", sans-serif;
+  border-bottom: 4px solid #a6631f;
+  display: inline-block;
+  font-size: 80px;
+}
+th {
+  font-size: 40px;
+  font-family: "Playball";
+}
+td {
+  font-family: "Dosis";
+  font-size: 20px;
+}
+
+.nav-pills .nav-item > .active {
+  background-color: #a6631f;
+}
+.schedule {
+  min-height: 400px;
+}
+
+.schedule h1 {
+  font-size: 34px;
+  color: #a6631f;
+  font-family: "Macondo";
+}
+.schedule h2 {
+  font-size: 28px;
+  color: white;
+
+  font-family: "Dosis";
+}
+
+.schedule .col {
+  color: white;
+  font-size: 20px;
+  font-family: "Dosis";
+}
+
+.reservation {
+  background-image: url("Material/Images/7acBKo.jpg");
+}
+
+.reservation-glass {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+footer {
+  min-height: 300px;
+  background-color: #4d2d0d;
+}
+
+footer h3 {
+  font-family: "Macondo";
+  border-bottom: solid 2px white;
+}
+
+footer p {
+  font-family: "Roboto Flex";
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: rgb(172, 169, 169);
+}
+@media (max-width: 992px) {
+  .responsive {
+    text-align: center;
+  }
+  .responsive-welcome {
+    width: 100%;
+  }
+  .greeting {
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+  .greeting h1,
+  .greeting h2,
+  .greeting p {
+    margin-left: 0;
+  }
+  .decor1 {
+    z-index: -2;
+  }
+  .welcome-bg {
+    display: none;
+  }
+}
